@@ -34,5 +34,13 @@ echo "Sõnade arv ".str_word_count($stylesText);
 // Teksti kärpimine
 echo "<br>";
 $tekst2 = "Põhitoetus võetakse ära 11:11 kui võlgnevused ei ole para";
+echo ltrim($tekst2);
+echo "<br>";
 echo trim($tekst2, "");
+echo "<br>";
+$massiivitekst = "Täiendav info õpilase kohta";
+echo "1.täht - ".$massiivitekst[0];
+$sona = str_word_count($massiivitekst, 1);
+print_r($sona);
+echo "Kolmas sõna - ".$sona[2];
 ?>
