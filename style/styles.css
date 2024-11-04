@@ -1,0 +1,37 @@
+nav {
+    width:50%;
+    margin: 0 auto;
+    background-color:#dee3fa;
+    margin-top:20px;
+    padding:10px;
+    border-left: 3px #2d3452 solid;
+    border-right: 3px #2d3452 solid;
+
+}
+
+nav ul {
+    display:flex;
+    justify-content:space-between;
+    list-style:none;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+}
+nav ul li a {
+    transition: color 0.5s;
+    font-size:20px;
+    text-decoration:none;
+    color: #2d3452
+
+
+}
+a:hover {
+
+    color:#ffff;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.mark {
+}
