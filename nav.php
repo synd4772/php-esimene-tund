@@ -1,6 +1,4 @@
-<header class="header">
-    <h1>PHP tunnitööd</h1>
-</header>
+
 <nav>
     <ul>
         <li>
@@ -11,6 +9,9 @@
         </li>
         <li>
             <a href="?leht=leht-moistatus.php">Mõistatus</a>
+        </li>
+        <li>
+            <a href="?leht=ajafunktsioonid.php">Ajafunktsioonid</a>
         </li>
     </ul>
 </nav>

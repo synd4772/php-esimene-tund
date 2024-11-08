@@ -47,3 +47,8 @@ footer{
     font-size:small;
     width:100%
 }
+
+div#kodu{
+    padding:2%;
+    border:solid 1pt grey;
+}
