@@ -35,3 +35,15 @@ a:hover {
 }
 .mark {
 }
+
+footer{
+    bottom:0;
+    background-color:#2d3452;
+    color: white;
+    padding: 2%;
+    left: 0;
+    height: 2em;
+    position: fixed;
+    font-size:small;
+    width:100%
+}

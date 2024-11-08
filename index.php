@@ -10,22 +10,21 @@
 include("nav.php");
 ?>
 <section>
-<?php
+    <?php
     if(isset($_GET["leht"])) {
         echo "<div>";
         include('content/'.$_GET["leht"]);
         echo "</div>";
 
     } else {
-        echo "Tere tulemast!";
+        include('content/kodu.php');
     }
-?>
+    ?>
 </section>
 <?php
-    echo "<p class='mark'>Aleksander Milishenko &copy;";
-    echo date('Y')."</p>";
-
+include("footer.php");
 ?>
+
 </body>
 </html>
 
