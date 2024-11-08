@@ -12,5 +12,22 @@ echo "<li>Täht 'a' asub: ".strpos($riik, "a")."</li>";
 echo "<li>Sõnad riigus sõnas on: ".str_word_count($riik)."</li>";
 echo "<li>Vastupidine sõna on: ".strrev($riik)."</li>";
 echo "</ol>";
-//str_replace()
+
+
+?>
+<form method="post">
+    <h3>Sisesta mida sa arvad</h3>
+    <input type="text" name="country">
+    <input type="submit">
+    <?php
+    $vastus = "vale";
+    if(isset($_POST["country"])){
+        $country = $_POST["country"];
+        if($country == $riik){
+            $vastus = "õige";
+            echo "<p>".$vastus."</p>";
+        }
+    }
+    ?>
+</form>
 

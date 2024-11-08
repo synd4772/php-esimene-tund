@@ -48,7 +48,19 @@ footer{
     width:100%
 }
 
+div#kuupaev {
+    width:50%;
+    padding: 2%;
+    border: solid 1pt gray;
+    border-radius: 32px;
+}
+
 div#kodu{
     padding:2%;
     border:solid 1pt grey;
+}
+
+#pilt{
+    width: 50%;
+    height: 50%;
 }
