@@ -13,5 +13,11 @@
         <li>
             <a href="?leht=ajafunktsioonid.php">Ajafunktsioonid</a>
         </li>
+        <li>
+            <a href="?leht=pildid.php">Pildid</a>
+        </li>
+        <li>
+            <a href="?leht=massivid.php">Massivid</a>
+        </li>
     </ul>
 </nav>
