@@ -19,7 +19,7 @@
 </form>
 <?php
     $pildidmassiv = array(); // massiv kus pildid asuvad
-    $asukoht = opendir('/img/');
+    $asukoht = opendir('img/');
     while($rida = readdir($asukoht)){
         if($rida!='.' && $rida!='..') {
             array_push($pildidmassiv, $rida);

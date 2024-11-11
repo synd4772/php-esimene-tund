@@ -9,6 +9,10 @@ nav {
 
 }
 
+body{
+    margin-bottom: 15em;
+}
+
 nav ul {
     display:flex;
     justify-content:space-between;
