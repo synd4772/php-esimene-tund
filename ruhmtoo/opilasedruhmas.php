@@ -28,6 +28,7 @@ function opilaneDiv($nimi, $juuksevarv, $sitelink, $gender){
     <title>Opilased Ruhmas</title>
 </head>
 <body>
+    <h1 style="text-align: center">Õpilased</h1>
     <div class="opilased-container">
         <?php
             $first = false;
