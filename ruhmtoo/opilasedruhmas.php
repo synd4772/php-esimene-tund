@@ -96,8 +96,8 @@ function opilaneDiv($nimi, $juuksevarv, $sitelink, $gender){
                     $xml_root->appendChild($xmlDoc->createElement("gender", $_POST["genders"]));
                     $xmlDoc->save('xml/opilased.xml');
 
-                    header('Location: opilasedruhmas.php?m=success');
-                    exit;
+                    exit(header('Location: opilasedruhmas.php?m=success'));
+
                 }
 
             }
