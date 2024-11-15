@@ -19,5 +19,11 @@
         <li>
             <a href="?leht=massivid.php">Massivid</a>
         </li>
+        <li>
+            <a href="autod-xml.php" target="_blank">XML Autod</a>
+        </li>
+        <li>
+            <a href="ruhmtoo/opilasedruhmas.php" target="_blank">Õpilased rühmas</a>
+        </li>
     </ul>
 </nav>

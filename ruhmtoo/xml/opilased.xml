@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opilased>
+  <opilane>
+    <nimi>Timur Bashirov</nimi>
+    <post>TimurBaširov23.thkit.ee</post>
+    <juuksevarv>must</juuksevarv>
+    <sitelink>null</sitelink>
+    <gender>male</gender>
+  </opilane>
+  <opilane>
+    <nimi>Erik Gerega</nimi>
+    <post>ErikGerega23.thkit.ee</post>
+    <juuksevarv>must</juuksevarv>
+    <link>null</link>
+    <gender>male</gender>
+  </opilane>
+  <opilane>
+    <nimi>Valeria Allik</nimi>
+    <post>ValeriaAllik23.thkit.ee</post>
+    <juuksevarv>must</juuksevarv>
+    <link>null</link>
+    <gender>female</gender>
+  </opilane>
+</opilased>
