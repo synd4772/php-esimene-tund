@@ -1,14 +1,13 @@
 <?php
 $opilased = simplexml_load_file("xml/opilased.xml");
-function opilaneDiv($nimi, $post, $juuksevarv, $sitelink, $gender){
+function opilaneDiv($nimi, $juuksevarv, $sitelink, $gender){
     echo "<div class='opilane-card ".$gender."'>";
     echo "<div class='opilane-card-header'>";
     echo "<h3>Nimi: ".$nimi."</h3>";
 
     echo "</div>";
     echo "<div class='opilane-card-body'>";
-    echo "<p>Post: ".$post."</p>";
-    echo "<p>Juuksevarv: ".$juuksevarv."</p>";
+    echo "<p>Juuksevärv: ".$juuksevarv."</p>";
 
     echo "</div>";
     echo "<div class='opilane-card-footer'>";
@@ -42,7 +41,7 @@ function opilaneDiv($nimi, $post, $juuksevarv, $sitelink, $gender){
                     echo "<div class='opilane-row'>";
                     $first = true;
                 }
-                opilaneDiv($opilane->nimi, $opilane->post, $opilane->juuksevarv, $opilane->sitelink, $opilane->gender);
+                opilaneDiv($opilane->nimi, $opilane->juuksevarv, $opilane->sitelink, $opilane->gender);
                 if($row_count === $max_size_of_row || $index === count($opilased)){
                     echo "</div>";
                     $first = false;
@@ -54,22 +53,28 @@ function opilaneDiv($nimi, $post, $juuksevarv, $sitelink, $gender){
     <div class="form-container">
         <h1>Lisa õpilane</h1>
         <form method="post" id="main-form">
-
-            <label for="name-input">Nimi:</label>
-            <input type="text" name="name-input" id="name-input" placeholder="Nimi"/>
-            <label for="post-input">Post:</label>
-            <input type="text" name="post-input" id="post-input" placeholder="Post"/>
-            <label for="juuksuvarv-input">Juuksuvärv:</label>
-            <input type="text" name="juuksuvarv-input" id="juuksuvarv-input" placeholder="Juuksuvärv"/>
-            <label for="genders">Genders:</label>
-            <select name="genders" id="genders">
-                <option>male</option>
-                <option>female</option>
-            </select>
-            <label for="site-link">Link (Optional): </label>
-            <input type="text" name="site-link-input" id="site-link" placeholder="Link">
-
-            <input type="submit" value="OK" name="submit" id="submit"/>
+            <div class="inputs-container">
+                <div class="input-container">
+                    <label for="name-input">Nimi:</label>
+                    <input type="text" name="name-input" id="name-input" placeholder="Nimi"/>
+                </div>
+                <div class="input-container">
+                    <label for="juuksuvarv-input">Juuksuvärv:</label>
+                    <input type="text" name="juuksuvarv-input" id="juuksuvarv-input" placeholder="Juuksuvärv"/>
+                </div>
+                <div class="input-container">
+                <label for="genders">Genders:</label>
+                <select name="genders" id="genders">
+                    <option>male</option>
+                    <option>female</option>
+                </select>
+                </div>
+                <div class="input-container">
+                    <label for="site-link">Veebileht (Optional): </label>
+                    <input type="text" name="site-link-input" id="site-link" placeholder="veebileht">
+                </div>
+                <input type="submit" value="OK" name="submit" id="submit"/>
+            </div>
             <?php
             if(isset($_POST["submit"])) {
                 $xmlDoc = new DOMDocument();
@@ -79,9 +84,8 @@ function opilaneDiv($nimi, $post, $juuksevarv, $sitelink, $gender){
                 $specificNode = $xmlDoc->getElementsByTagName("opilased")[0];
                 $xml_root = $xmlDoc->createElement('opilane');
                 $specificNode->appendChild($xml_root);
-                if(!empty($_POST["name-input"]) && !empty($_POST["post-input"]) && !empty($_POST["juuksuvarv-input"] && !empty($_POST["genders"]))){
+                if(!empty($_POST["name-input"]) && !empty($_POST["juuksuvarv-input"] && !empty($_POST["genders"]))){
                     $xml_root->appendChild($xmlDoc->createElement("nimi", $_POST["name-input"]));
-                    $xml_root->appendChild($xmlDoc->createElement("post", $_POST["post-input"]));
                     $xml_root->appendChild($xmlDoc->createElement("juuksevarv", $_POST["juuksuvarv-input"]));
                     if(!empty($_POST["site-link-input"])){
                         $xml_root->appendChild($xmlDoc->createElement("link", $_POST["site-link-input"]));
@@ -102,10 +106,12 @@ function opilaneDiv($nimi, $post, $juuksevarv, $sitelink, $gender){
     </div>
     <script>
         function clickButton(element, nimi, sitelink){
-            if(sitelink === "null"){
+            console.log(sitelink)
+            if(sitelink === "null" || sitelink === ""){
                 const onlyName = nimi.replace(" ", "")
 
                 const link = `https://${onlyName}23.thkit.ee/`;
+
                 window.open(link);
             }
             else{
