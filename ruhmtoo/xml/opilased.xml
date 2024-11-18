@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opilased>
   <opilane>
-    <nimi>Timur Bashirov</nimi>
-    <post>TimurBaširov23.thkit.ee</post>
+    <id>2</id>
+    <nimi>Vlad Kudriashev</nimi>
     <juuksevarv>must</juuksevarv>
-    <sitelink>null</sitelink>
+    <link>null</link>
     <gender>male</gender>
   </opilane>
   <opilane>
+    <id>3</id>
+    <nimi>Erik Gerega</nimi>
+    <juuksevarv>must</juuksevarv>
+    <link>null</link>
+    <gender>male</gender>
+  </opilane>
+  <opilane>
+    <id>3</id>
     <nimi>Aleksander Milishenko</nimi>
     <juuksevarv>hele</juuksevarv>
     <link>null</link>
     <gender>male</gender>
   </opilane>
   <opilane>
-    <nimi>test</nimi>
-    <juuksevarv>hele</juuksevarv>
+    <id>4</id>
+    <nimi>Bogdan Sergachiev</nimi>
+    <juuksevarv>punapea</juuksevarv>
     <link>null</link>
-    <gender>female</gender>
+    <gender>male</gender>
   </opilane>
 </opilased>

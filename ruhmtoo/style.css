@@ -125,3 +125,22 @@ display: flex;
 p{
     margin: 0;
 }
+
+.kustuta-form-container{
+    display:flex;
+    width:20%
+}
+
+form{
+    margin: 0;
+    padding: 0;
+}
+
+.kustuta-button{
+    color:white;
+    background-color:#be5152;
+    border:0;
+    font-weight: 700;
+    width:100%;
+    cursor:pointer;
+}
