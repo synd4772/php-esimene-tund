@@ -8,30 +8,15 @@
     <gender>male</gender>
   </opilane>
   <opilane>
-    <nimi>Erik Gerega</nimi>
-    <post>ErikGerega23.thkit.ee</post>
-    <juuksevarv>must</juuksevarv>
+    <nimi>Aleksander Milishenko</nimi>
+    <juuksevarv>hele</juuksevarv>
     <link>null</link>
     <gender>male</gender>
   </opilane>
   <opilane>
-    <nimi>Valeria Allik</nimi>
-    <post>ValeriaAllik23.thkit.ee</post>
-    <juuksevarv>must</juuksevarv>
+    <nimi>test</nimi>
+    <juuksevarv>hele</juuksevarv>
     <link>null</link>
     <gender>female</gender>
-  </opilane>
-  <opilane>
-    <nimi>David Myrseth</nimi>
-    <post>DavidMyrseth23.thkit.ee</post>
-    <juuksevarv>must</juuksevarv>
-    <link>null</link>
-    <gender>male</gender>
-  </opilane>
-  <opilane>
-    <nimi>Aleksandr Nadvornõi</nimi>
-    <juuksevarv>must</juuksevarv>
-    <link>AleksandrNadvornõi23.thkit.ee</link>
-    <gender>male</gender>
   </opilane>
 </opilased>

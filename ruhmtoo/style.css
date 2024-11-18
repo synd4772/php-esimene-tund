@@ -17,7 +17,7 @@ body{
 }
 .opilane-card{
     width: 250px;
-
+    height: 100%;
     background-color: #444648;
     color: #ffff;
     border-top-left-radius: 32px;
@@ -29,20 +29,23 @@ body{
     display: flex;
     text-align: center;
     font-family: Arial;
-    flex-direction: column;
-    height: 30%;
+    justify-content: center;
+    padding-top:15px;
+    padding-bottom: 15px;
 }
 .opilane-card-header h3{
     border-bottom: 2px white solid;
     align-self: center;
     padding-bottom:5px;
+    margin:0;
+
 }
 .opilane-row{
     display:flex;
     justify-content: space-around;
 }
 .opilane-card-body{
-    height: 50%;
+    min-height: 30%;
     text-align: start;
     font-family: Arial;
     flex-direction: column;
@@ -54,13 +57,13 @@ body{
 
 }
 .opilane-card-footer{
-    height: 20%;
+    padding-top:20px;
     display: flex;
 }
 .leht-button{
     width: 100%;
     align-self: end;
-    border: 0px;
+    border: 0;
     height: 40px;
     background-color:#413f48;
     color:#ffff;
@@ -104,4 +107,21 @@ body{
     display:flex;
     row-gap: 10px;
     flex-direction: column;
+}
+.genders-container{
+    display: flex;
+    column-gap: 25px;
+}
+.genders-choice-container{
+display: flex;
+    align-items: flex-start;
+}
+.gender-female{
+    color: pink;
+}
+.gender-male{
+    color: lightskyblue;
+}
+p{
+    margin: 0;
 }

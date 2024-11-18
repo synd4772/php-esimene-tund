@@ -1,3 +1,4 @@
+<?php if (isset($_GET['kodu'])) {die(highlight_file(__FILE__, 1));}?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

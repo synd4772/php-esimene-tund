@@ -1,3 +1,4 @@
+<?php if (isset($_GET['kodu'])) {die(highlight_file(__FILE__, 1));}?>
 <?php
 $autod = simplexml_load_file("content/xml/autod.xml");
 
