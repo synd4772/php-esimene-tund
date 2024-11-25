@@ -50,3 +50,11 @@ table tbody tr:hover{
 .special-space{
     padding-top: 20px;
 }
+.on-li a{
+
+    text-decoration: none !important;
+    color: #ffff;
+}
+.on-li {
+    background-color: #2d3452;
+}
